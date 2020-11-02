@@ -1,0 +1,46 @@
+{
+  "name": "ffcreatorlite",
+  "version": "1.2.1",
+  "description": "FFCreatorLite is a lightweight and flexible short video production library",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint ./lib --ext .js",
+    "travis": "npm run lint",
+    "examples": "node ./examples/",
+    "doc": "docsify serve ./docs"
+  },
+  "repository": "koajs/koa",
+  "keywords": [
+    "video",
+    "nodejs",
+    "video_production"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "ffmpeg-probe": "^1.0.6",
+    "fluent-ffmpeg": "^2.1.2",
+    "fs-extra": "^9.0.1",
+    "image-size": "^0.9.1",
+    "lodash": "^4.17.20",
+    "rmfr": "^2.0.0",
+    "tempy": "^0.7.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "inquirer": "^7.3.3",
+    "jest": "^26.5.2",
+    "keypress": "^0.2.1"
+  },
+  "files": [
+    "dist",
+    "lib"
+  ]
+}
