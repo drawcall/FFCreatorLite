@@ -35,6 +35,14 @@
 - 视频处理能力极强, 可以对多个视频片段进行裁切、合成等操作。
 - 包含`animate.css`70%的动画效果，可以将 css 动画转换为视频。
 
+## Demo
+
+<p align="center">
+  <a href="https://tnfe.github.io/FFCreator/#/guide/lite" style="margin-right:100px"><img width="300" src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/imgs/demo/03.gif?raw=true" /></a>     
+  <a href="https://tnfe.github.io/FFCreator/#/guide/lite"><img width="300" src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/imgs/demo/04.gif?raw=true" /></a>
+</p>
+
+
 ## 使用
 
 ### Install npm Package
