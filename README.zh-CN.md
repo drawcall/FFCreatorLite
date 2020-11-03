@@ -8,7 +8,7 @@
 <a href="https://www.npmjs.com/ffcreatorlite" target="_blank"><img src="https://img.shields.io/npm/v/ffcreatorlite.svg" alt="NPM Version" /></a>
 <a href="https://www.npmjs.com/ffcreatorlite" target="_blank"><img src="https://img.shields.io/npm/l/ffcreatorlite.svg" alt="Package License" /></a>
 <a href="https://travis-ci.org/github/tnfe/FFCreatorLite" target="_blank"><img src="https://travis-ci.org/tnfe/FFCreatorLite.svg?branch=master" alt="Travis CI" /></a>
-<a href="https://github.com/prettier/prettier" target="_blank"><img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square" alt="Code Style"></a>
+<a href="https://github.com/prettier/prettier" target="_blank"><img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg" alt="Code Style"></a>
 <a href="https://github.com/tnfe/FFCreatorLite/pulls" target="_blank"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs"/></a>
 <a href="https://nodejs.org" target="_blank"><img src="https://img.shields.io/badge/node-%3E%3D%208.0.0-brightgreen.svg" alt="Node Version" /></a>
 </div>
@@ -38,8 +38,8 @@
 ## Demo
 
 <p align="center">
-  <a href="https://tnfe.github.io/FFCreator/#/guide/lite" style="margin-right:100px"><img width="300" src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/imgs/demo/03.gif?raw=true" /></a>   
-  <img width="100" src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/imgs/demo/foo.png?raw=true" />     
+  <a href="https://tnfe.github.io/FFCreator/#/guide/lite" style="margin-right:100px"><img width="300" src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/imgs/demo/03.gif?raw=true" /></a>
+  <img width="100" src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/imgs/demo/foo.png?raw=true" />
   <a href="https://tnfe.github.io/FFCreator/#/guide/lite"><img width="300" src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/imgs/demo/04.gif?raw=true" /></a>
 </p>
 
