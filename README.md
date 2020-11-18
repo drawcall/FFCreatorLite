@@ -29,7 +29,7 @@ Nowadays, short video is an increasingly popular form of media communication. Li
 - Only rely on `FFmpeg`, easy to install, cross-platform, and low requirements for machine configuration.
 - The video processing speed is extremely fast, a 5-7 minute video only takes 1 minute.
 - Supports multiple elements such as pictures, sounds, video clips, and text.
-- Contains 70% animation effects of ʻanimate.css`, which can convert css animation to video.
+- Contains 70% animation effects of `animate.css`, which can convert css animation to video.
 
 ## Demo
 
