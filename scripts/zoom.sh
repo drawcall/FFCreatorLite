@@ -1,3 +1,10 @@
+#!/bin/bash
+
+# zoompan抖动 - 前加scale=4000x4000,
+# zoompan条件 - zoompan=z='if(lte(zoom,1.5),zoom+0.005,1.51)'
+# loop 1和zoompan冲突会循环缩放 - 设置setpts=PTS-STARTPTS+12/TB
+# zoompan 被裁切解决办法 - pad=scale*iw:scale*ih:(ow-iw)/2:(oh-ih)/2:color=black@0, 在overlay再左移归位
+
 ffmpeg -threads 2 -loop 1 -i imgs/003.jpeg -loop 1 -i imgs/logo.png \
 -filter_complex \
 "color=c=black:r=60:size=800*450:d=20.0[black];\
@@ -7,9 +14,3 @@ ffmpeg -threads 2 -loop 1 -i imgs/003.jpeg -loop 1 -i imgs/logo.png \
 [black][bg0]overlay=x=-overlay_w/4:y=-overlay_h/4[bg1];\
 [bg1][logo]overlay=x=100:y=100" \
 -ss 1 -t 20 -c:v libx264 -c:a aac zoom.mp4
-
-
-# zoompan抖动 - 前加scale=4000x4000,
-# zoompan条件 - zoompan=z='if(lte(zoom,1.5),zoom+0.005,1.51)'
-# loop 1和zoompan冲突会循环缩放 - 设置setpts=PTS-STARTPTS+12/TB
-# zoompan 被裁切解决办法 - pad=scale*iw:scale*ih:(ow-iw)/2:(oh-ih)/2:color=black@0, 在overlay再左移归位

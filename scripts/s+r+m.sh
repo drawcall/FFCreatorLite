@@ -1,3 +1,6 @@
+#!/bin/bash
+# Solve rotate jitter
+
 ffmpeg -threads 2 -loop 1 -i imgs/003.jpeg -loop 1 -i imgs/logo.png \
 -filter_complex \
 "color=c=black:r=60:size=800*450:d=20.0[black];\
@@ -8,5 +11,3 @@ ffmpeg -threads 2 -loop 1 -i imgs/003.jpeg -loop 1 -i imgs/logo.png \
 [black][bg0]overlay=x=-overlay_w/4:y=-overlay_h/4[bg1];\
 [bg1][logo]overlay=x=100+t*20:y=100" \
 -ss 1 -t 20 -c:v libx264 -c:a aac srm.mp4
-
-# Solve rotate jitter

@@ -19,7 +19,7 @@ const ffcreateTask = () => {
   const bg1 = path.join(__dirname, './assets/imgs/wallp/02.jpeg');
   const bg2 = path.join(__dirname, './assets/imgs/wallp/04.jpeg');
   const font1 = path.join(__dirname, './assets/font/ysst.ttf');
-  const font2 = path.join(__dirname, './assets/font/scsf.ttf');
+  const font2 = path.join(__dirname, './assets/font/jdnt.ttf');
   const audio = path.join(__dirname, './assets/audio/02.wav');
   const outputDir = path.join(__dirname, './output/');
   const cacheDir = path.join(__dirname, './cache/');

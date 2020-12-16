@@ -1,3 +1,6 @@
+#!/bin/bash
+# fade depends on loop otherwise invalid -loop 1 -i img
+
 ffmpeg -loop 1 -i imgs/003.jpeg -loop 1 -i imgs/logo.png \
 -filter_complex \
 "color=c=black:r=60:size=800*450:d=20.0[black];\
@@ -7,5 +10,3 @@ ffmpeg -loop 1 -i imgs/003.jpeg -loop 1 -i imgs/logo.png \
 [black][bg0]overlay[bg1];\
 [bg1][logo]overlay=x=400:y=(H-h)/2" \
 -ss 1 -t 20 -c:v libx264 -c:a aac fade.mp4
-
-# fade depends on loop otherwise invalid -loop 1 -i img

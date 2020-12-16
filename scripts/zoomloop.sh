@@ -1,3 +1,5 @@
+#!/bin/bash
+
 ffmpeg -threads 2 -loop 1 -i imgs/001.jpeg -loop 1 -i imgs/logo.png \
 -filter_complex \
 "color=c=black:r=60:size=800*450:d=20.0[black];\
