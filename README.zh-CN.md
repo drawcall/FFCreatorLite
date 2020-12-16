@@ -132,16 +132,27 @@ creator.on('complete', e => {
 
 #### 更详细的教程请查看[这里](https://tnfe.github.io/FFCreator/#/guide/lite)
 
-## 安装
+## 安装依赖
 
-### 由于`FFCreatorLite`仅仅依赖于`FFmpeg`，因此您需要安装`FFmpeg`的常规版本
+### `FFCreatorLite`依赖于`FFmpeg`，因此您需要安装`FFmpeg`
+
+FFCreatorLite依赖于`FFmpeg>=0.9`以上版本。请设置FFmpeg为全局变量, 否则需要使用setFFmpegPath添加FFmpeg本机路径。(windows用户的ffmpeg很可能不在您的`%PATH`中，因此您必须设置`%FFMPEG_PATH`)
+
+```javascript
+FFCreator.setFFmpegPath('...');
+```
+
+当然您也可以在你的机器上编译ffmpeg, 编译教程请看[https://trac.ffmpeg.org/wiki/CompilationGuide/Ubuntu](https://trac.ffmpeg.org/wiki/CompilationGuide/Ubuntu)。
+
+### 安装教程
+
+> 更多`FFmpeg`教程请查看[https://trac.ffmpeg.org/wiki](https://trac.ffmpeg.org/wiki)
 
 - How to Install and Use FFmpeg on CentOS [https://linuxize.com/post/how-to-install-ffmpeg-on-centos-7/](https://linuxize.com/post/how-to-install-ffmpeg-on-centos-7/)
 - How to Install FFmpeg on Debian [https://linuxize.com/post/how-to-install-ffmpeg-on-debian-9/](https://linuxize.com/post/how-to-install-ffmpeg-on-debian-9/)
 - How to Install FFmpeg on Windows [http://blog.gregzaal.com/how-to-install-ffmpeg-on-windows/](http://blog.gregzaal.com/how-to-install-ffmpeg-on-windows/)
 - How to Install FFmpeg on Mac OSX [https://trac.ffmpeg.org/wiki/CompilationGuide/macOS](https://trac.ffmpeg.org/wiki/CompilationGuide/macOS)
 
-##### 更多`FFmpeg`教程请查看[https://trac.ffmpeg.org/wiki](https://trac.ffmpeg.org/wiki)
 
 ## 贡献代码
 

@@ -130,7 +130,19 @@ The default registration point of `FFCreatorLite` is the upper left corner and c
 
 ## Installation
 
-#### Since `FFCreatorLite` only depends on `FFmpeg`, you need to install the regular version of `FFmpeg`
+### `FFCreatorLite` depends on `FFmpeg`, so you need to install `FFmpeg`
+
+FFCreatorLite depends on `FFmpeg>=0.9` and above. Please set FFmpeg as a global variable, otherwise you need to use setFFmpegPath to add FFmpeg native path. (The ffmpeg for windows users is probably not in your `%PATH`, so you must set `%FFMPEG_PATH`)
+
+```javascript
+FFCreator.setFFmpegPath('...');
+```
+
+Of course, you can also compile ffmpeg on your machine, please see [https://trac.ffmpeg.org/wiki/CompilationGuide/Ubuntu](https://trac.ffmpeg.org/wiki/CompilationGuide/Ubuntu).
+
+### `FFmpeg` Installation tutorial
+
+> For more `FFmpeg` tutorials, please view [https://trac.ffmpeg.org/wiki](https://trac.ffmpeg.org/wiki)
 
 - How to Install and Use FFmpeg on CentOS [https://linuxize.com/post/how-to-install-ffmpeg-on-centos-7/](https://linuxize.com/post/how-to-install-ffmpeg-on-centos-7/)
 - How to Install FFmpeg on Debian [https://linuxize.com/post/how-to-install-ffmpeg-on-debian-9/](https://linuxize.com/post/how-to-install-ffmpeg-on-debian-9/)
