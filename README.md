@@ -35,9 +35,9 @@ Nowadays, short video is an increasingly popular form of media communication. Li
 ## Demo
 
 <p align="center">
-  <a href="https://tnfe.github.io/FFCreator/#/guide/lite" style="margin-right:100px"><img width="300" src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/imgs/demo/03.gif?raw=true" /></a>
+  <a href="https://tnfe.github.io/FFCreator/#/guide/lite" style="margin-right:100px"><img width="300" src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/imgs/demo/03.gif?raw=true?raw=true" /></a>
   <img width="100" src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/imgs/demo/foo.png?raw=true" />
-  <a href="https://tnfe.github.io/FFCreator/#/guide/lite"><img width="300" src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/imgs/demo/04.gif?raw=true" /></a>
+  <a href="https://tnfe.github.io/FFCreator/#/guide/lite"><img width="300" src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/imgs/demo/04.gif?raw=true?raw=true" /></a>
 </p>
 
 ## Useage
@@ -128,23 +128,23 @@ scene.setTransition('diagtl', 1.5);
 <table class="wiki">
   <tr>
     <td style="text-align: center">
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/fade.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/fade.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/fade.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/fade.gif?raw=true"
       /></a>
     </td>
     <td style="text-align: center">
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/fadeblack.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/fadeblack.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/fadeblack.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/fadeblack.gif?raw=true"
       /></a>
     </td>
     <td style="text-align: center">
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/fadewhite.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/fadewhite.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/fadewhite.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/fadewhite.gif?raw=true"
       /></a>
     </td>
     <td style="text-align: center">
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/distance.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/distance.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/distance.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/distance.gif?raw=true"
       /></a>
     </td>
   </tr>
@@ -156,23 +156,23 @@ scene.setTransition('diagtl', 1.5);
   </tr>
   <tr>
     <td style="text-align: center">
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/wipeleft.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/wipeleft.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/wipeleft.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/wipeleft.gif?raw=true"
       /></a>
     </td>
     <td style="text-align: center">
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/wiperight.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/wiperight.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/wiperight.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/wiperight.gif?raw=true"
       /></a>
     </td>
     <td style="text-align: center">
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/wipeup.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/wipeup.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/wipeup.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/wipeup.gif?raw=true"
       /></a>
     </td>
     <td style="text-align: center">
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/wipedown.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/wipedown.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/wipedown.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/wipedown.gif?raw=true"
       /></a>
     </td>
   </tr>
@@ -184,23 +184,23 @@ scene.setTransition('diagtl', 1.5);
   </tr>
   <tr>
     <td style="text-align: center">
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/slideleft.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/slideleft.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/slideleft.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/slideleft.gif?raw=true"
       /></a>
     </td>
     <td style="text-align: center">
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/slideright.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/slideright.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/slideright.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/slideright.gif?raw=true"
       /></a>
     </td>
     <td style="text-align: center">
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/slideup.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/slideup.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/slideup.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/slideup.gif?raw=true"
       /></a>
     </td>
     <td style="text-align: center">
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/slidedown.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/slidedown.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/slidedown.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/slidedown.gif?raw=true"
       /></a>
     </td>
   </tr>
@@ -212,23 +212,23 @@ scene.setTransition('diagtl', 1.5);
   </tr>
   <tr>
     <td style="text-align: center">
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/smoothleft.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/smoothleft.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/smoothleft.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/smoothleft.gif?raw=true"
       /></a>
     </td>
     <td style="text-align: center">
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/smoothright.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/smoothright.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/smoothright.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/smoothright.gif?raw=true"
       /></a>
     </td>
     <td style="text-align: center">
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/smoothup.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/smoothup.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/smoothup.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/smoothup.gif?raw=true"
       /></a>
     </td>
     <td style="text-align: center">
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/smoothdown.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/smoothdown.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/smoothdown.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/smoothdown.gif?raw=true"
       /></a>
     </td>
   </tr>
@@ -240,23 +240,23 @@ scene.setTransition('diagtl', 1.5);
   </tr>
   <tr>
     <td style="text-align: center">
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/circlecrop.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/circlecrop.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/circlecrop.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/circlecrop.gif?raw=true"
       /></a>
     </td>
     <td style="text-align: center">
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/rectcrop.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/rectcrop.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/rectcrop.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/rectcrop.gif?raw=true"
       /></a>
     </td>
     <td style="text-align: center">
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/circleclose.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/circleclose.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/circleclose.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/circleclose.gif?raw=true"
       /></a>
     </td>
     <td style="text-align: center">
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/circleopen.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/circleopen.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/circleopen.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/circleopen.gif?raw=true"
       /></a>
     </td>
   </tr>
@@ -268,23 +268,23 @@ scene.setTransition('diagtl', 1.5);
   </tr>
   <tr>
     <td style="text-align: center">
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/horzclose.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/horzclose.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/horzclose.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/horzclose.gif?raw=true"
       /></a>
     </td>
     <td style="text-align: center">
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/horzopen.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/horzopen.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/horzopen.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/horzopen.gif?raw=true"
       /></a>
     </td>
     <td style="text-align: center">
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/vertclose.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/vertclose.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/vertclose.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/vertclose.gif?raw=true"
       /></a>
     </td>
     <td style="text-align: center">
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/vertopen.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/vertopen.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/vertopen.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/vertopen.gif?raw=true"
       /></a>
     </td>
   </tr>
@@ -296,23 +296,23 @@ scene.setTransition('diagtl', 1.5);
   </tr>
   <tr>
     <td style="text-align: center">
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/diagbl.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/diagbl.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/diagbl.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/diagbl.gif?raw=true"
       /></a>
     </td>
     <td style="text-align: center">
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/diagbr.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/diagbr.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/diagbr.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/diagbr.gif?raw=true"
       /></a>
     </td>
     <td style="text-align: center">
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/diagtl.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/diagtl.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/diagtl.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/diagtl.gif?raw=true"
       /></a>
     </td>
     <td style="text-align: center">
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/diagtr.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/diagtr.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/diagtr.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/diagtr.gif?raw=true"
       /></a>
     </td>
   </tr>
@@ -324,23 +324,23 @@ scene.setTransition('diagtl', 1.5);
   </tr>
   <tr>
     <td style="text-align: center">
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/hlslice.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/hlslice.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/hlslice.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/hlslice.gif?raw=true"
       /></a>
     </td>
     <td style="text-align: center">
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/hrslice.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/hrslice.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/hrslice.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/hrslice.gif?raw=true"
       /></a>
     </td>
     <td style="text-align: center">
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/vuslice.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/vuslice.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/vuslice.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/vuslice.gif?raw=true"
       /></a>
     </td>
     <td style="text-align: center">
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/vdslice.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/vdslice.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/vdslice.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/vdslice.gif?raw=true"
       /></a>
     </td>
   </tr>
@@ -352,23 +352,23 @@ scene.setTransition('diagtl', 1.5);
   </tr>
   <tr>
     <td style="text-align: center">
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/dissolve.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/dissolve.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/dissolve.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/dissolve.gif?raw=true"
       /></a>
     </td>
     <td style="text-align: center">
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/pixelize.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/pixelize.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/pixelize.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/pixelize.gif?raw=true"
       /></a>
     </td>
     <td style="text-align: center">
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/radial.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/radial.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/radial.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/radial.gif?raw=true"
       /></a>
     </td>
     <td style="text-align: center">
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/hblur.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/hblur.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/hblur.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/hblur.gif?raw=true"
       /></a>
     </td>
   </tr>
@@ -380,23 +380,23 @@ scene.setTransition('diagtl', 1.5);
   </tr>
   <tr>
     <td style="text-align: center">
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/wipetl.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/wipetl.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/wipetl.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/wipetl.gif?raw=true"
       /></a>
     </td>
     <td style="text-align: center">
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/wipetr.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/wipetr.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/wipetr.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/wipetr.gif?raw=true"
       /></a>
     </td>
     <td style="text-align: center">
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/wipebl.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/wipebl.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/wipebl.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/wipebl.gif?raw=true"
       /></a>
     </td>
     <td>
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/wipebr.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/wipebr.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/wipebr.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/wipebr.gif?raw=true"
       /></a>
     </td>
   </tr>
@@ -408,18 +408,18 @@ scene.setTransition('diagtl', 1.5);
   </tr>
   <tr>
     <td style="text-align: center">
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/fadegrays.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/fadegrays.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/fadegrays.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/fadegrays.gif?raw=true"
       /></a>
     </td>
     <td style="text-align: center">
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/squeezev.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/squeezev.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/squeezev.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/squeezev.gif?raw=true"
       /></a>
     </td>
     <td style="text-align: center">
-      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/squeezeh.gif" style="padding:0; border:none"
-        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/squeezeh.gif"
+      <a href="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/squeezeh.gif?raw=true" style="padding:0; border:none"
+        ><img src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/gif/squeezeh.gif?raw=true"
       /></a>
     </td>
     <td></td>
