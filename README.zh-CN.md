@@ -33,6 +33,7 @@
 - 视频制作速度极快，一个 5 分钟的视频只需要不到 1 分钟。
 - 支持图片、声音、视频剪辑、文本等多种元素。
 - 视频处理能力极强, 可以对多个视频片段进行裁切、合成等操作。
+- 最新版本支持 30 多种场景过渡动画。
 - 包含`animate.css`70%的动画效果，可以将 css 动画转换为视频。
 
 ## Demo
@@ -42,7 +43,6 @@
   <img width="100" src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/imgs/demo/foo.png?raw=true" />
   <a href="https://tnfe.github.io/FFCreator/#/guide/lite"><img width="300" src="https://github.com/tnfe/FFCreatorLite/blob/master/examples/assets/imgs/demo/04.gif?raw=true" /></a>
 </p>
-
 
 ## 使用
 
@@ -57,7 +57,7 @@ Note: To run the preceding commands, Node.js and npm must be installed.
 #### Node.js
 
 ```javascript
-const {FFCreatorCenter, FFScene, FFImage, FFText, FFCreator} = require('ffcreatorlite');
+const { FFCreatorCenter, FFScene, FFImage, FFText, FFCreator } = require('ffcreatorlite');
 
 // create creator instance
 const creator = new FFCreator({
@@ -75,14 +75,14 @@ scene1.setBgColor('#ff0000');
 scene2.setBgColor('#b33771');
 
 // scene1
-const fbg = new FFImage({path: bg1});
+const fbg = new FFImage({ path: bg1 });
 scene1.addChild(fbg);
 
-const fimg1 = new FFImage({path: img1, x: 300, y: 60});
+const fimg1 = new FFImage({ path: img1, x: 300, y: 60 });
 fimg1.addEffect('moveInRight', 1.5, 1.2);
 scene1.addChild(fimg1);
 
-const text = new FFText({text: '这是第一屏', font, x: 100, y: 100});
+const text = new FFText({ text: '这是第一屏', font, x: 100, y: 100 });
 text.setColor('#ffffff');
 text.setBackgroundColor('#000000');
 text.addEffect('fadeIn', 1, 1);
@@ -92,10 +92,10 @@ scene1.setDuration(8);
 creator.addChild(scene1);
 
 // scene2
-const fbg2 = new FFImage({path: bg2});
+const fbg2 = new FFImage({ path: bg2 });
 scene2.addChild(fbg2);
 // logo
-const flogo = new FFImage({path: logo, x: 100, y: 100});
+const flogo = new FFImage({ path: logo, x: 100, y: 100 });
 flogo.addEffect('moveInUpBack', 1.2, 0.3);
 scene2.addChild(flogo);
 
@@ -116,11 +116,331 @@ creator.on('complete', e => {
 });
 ```
 
+## 关于过渡动画
+
+最新版本的ffcreatorlite已经支持场景过渡动画, 这意味着您可以像ffcreator一样用它制作炫酷效果。
+
+当然您需要安装[4.3.0](https://stackoverflow.com/questions/60704545/xfade-filter-not-available-with-ffmpeg)以上版本的ffmpeg. 因为这里使用的是[Xfade](https://trac.ffmpeg.org/wiki/Xfade)滤镜来实现的动画。
+
+#### 使用
+```javascript
+// https://trac.ffmpeg.org/wiki/Xfade
+scene.setTransition('diagtl', 1.5);
+```
+
+<table class="wiki">
+  <tr>
+    <td style="text-align: center">
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/fade.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/fade.gif"
+      /></a>
+    </td>
+    <td style="text-align: center">
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/fadeblack.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/fadeblack.gif"
+      /></a>
+    </td>
+    <td style="text-align: center">
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/fadewhite.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/fadewhite.gif"
+      /></a>
+    </td>
+    <td style="text-align: center">
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/distance.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/distance.gif"
+      /></a>
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align: center"><strong>fade</strong> (default)</td>
+    <td style="text-align: center">fadeblack</td>
+    <td style="text-align: center">fadewhite</td>
+    <td style="text-align: center">distance</td>
+  </tr>
+  <tr>
+    <td style="text-align: center">
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/wipeleft.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/wipeleft.gif"
+      /></a>
+    </td>
+    <td style="text-align: center">
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/wiperight.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/wiperight.gif"
+      /></a>
+    </td>
+    <td style="text-align: center">
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/wipeup.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/wipeup.gif"
+      /></a>
+    </td>
+    <td style="text-align: center">
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/wipedown.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/wipedown.gif"
+      /></a>
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align: center"><strong>wipeleft</strong></td>
+    <td style="text-align: center"><strong>wiperight</strong></td>
+    <td style="text-align: center"><strong>wipeup</strong></td>
+    <td style="text-align: center"><strong>wipedown</strong></td>
+  </tr>
+  <tr>
+    <td style="text-align: center">
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/slideleft.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/slideleft.gif"
+      /></a>
+    </td>
+    <td style="text-align: center">
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/slideright.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/slideright.gif"
+      /></a>
+    </td>
+    <td style="text-align: center">
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/slideup.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/slideup.gif"
+      /></a>
+    </td>
+    <td style="text-align: center">
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/slidedown.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/slidedown.gif"
+      /></a>
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align: center"><strong>slideleft</strong></td>
+    <td style="text-align: center"><strong>slideright</strong></td>
+    <td style="text-align: center"><strong>slideup</strong></td>
+    <td style="text-align: center"><strong>slidedown</strong></td>
+  </tr>
+  <tr>
+    <td style="text-align: center">
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/smoothleft.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/smoothleft.gif"
+      /></a>
+    </td>
+    <td style="text-align: center">
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/smoothright.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/smoothright.gif"
+      /></a>
+    </td>
+    <td style="text-align: center">
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/smoothup.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/smoothup.gif"
+      /></a>
+    </td>
+    <td style="text-align: center">
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/smoothdown.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/smoothdown.gif"
+      /></a>
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align: center">smoothleft</td>
+    <td style="text-align: center">smoothright</td>
+    <td style="text-align: center">smoothup</td>
+    <td style="text-align: center">smoothdown</td>
+  </tr>
+  <tr>
+    <td style="text-align: center">
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/circlecrop.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/circlecrop.gif"
+      /></a>
+    </td>
+    <td style="text-align: center">
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/rectcrop.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/rectcrop.gif"
+      /></a>
+    </td>
+    <td style="text-align: center">
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/circleclose.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/circleclose.gif"
+      /></a>
+    </td>
+    <td style="text-align: center">
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/circleopen.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/circleopen.gif"
+      /></a>
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align: center">rectcrop</td>
+    <td style="text-align: center">circlecrop</td>
+    <td style="text-align: center">circleclose</td>
+    <td style="text-align: center">circleopen</td>
+  </tr>
+  <tr>
+    <td style="text-align: center">
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/horzclose.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/horzclose.gif"
+      /></a>
+    </td>
+    <td style="text-align: center">
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/horzopen.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/horzopen.gif"
+      /></a>
+    </td>
+    <td style="text-align: center">
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/vertclose.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/vertclose.gif"
+      /></a>
+    </td>
+    <td style="text-align: center">
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/vertopen.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/vertopen.gif"
+      /></a>
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align: center">horzclose</td>
+    <td style="text-align: center">horzopen</td>
+    <td style="text-align: center">vertclose</td>
+    <td style="text-align: center">vertopen</td>
+  </tr>
+  <tr>
+    <td style="text-align: center">
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/diagbl.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/diagbl.gif"
+      /></a>
+    </td>
+    <td style="text-align: center">
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/diagbr.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/diagbr.gif"
+      /></a>
+    </td>
+    <td style="text-align: center">
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/diagtl.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/diagtl.gif"
+      /></a>
+    </td>
+    <td style="text-align: center">
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/diagtr.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/diagtr.gif"
+      /></a>
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align: center">diagbl</td>
+    <td style="text-align: center">diagbr</td>
+    <td style="text-align: center">diagtl</td>
+    <td style="text-align: center">diagtr</td>
+  </tr>
+  <tr>
+    <td style="text-align: center">
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/hlslice.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/hlslice.gif"
+      /></a>
+    </td>
+    <td style="text-align: center">
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/hrslice.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/hrslice.gif"
+      /></a>
+    </td>
+    <td style="text-align: center">
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/vuslice.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/vuslice.gif"
+      /></a>
+    </td>
+    <td style="text-align: center">
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/vdslice.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/vdslice.gif"
+      /></a>
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align: center">hlslice</td>
+    <td style="text-align: center">hrslice</td>
+    <td style="text-align: center">vuslice</td>
+    <td style="text-align: center">vdslice</td>
+  </tr>
+  <tr>
+    <td style="text-align: center">
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/dissolve.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/dissolve.gif"
+      /></a>
+    </td>
+    <td style="text-align: center">
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/pixelize.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/pixelize.gif"
+      /></a>
+    </td>
+    <td style="text-align: center">
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/radial.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/radial.gif"
+      /></a>
+    </td>
+    <td style="text-align: center">
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/hblur.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/hblur.gif"
+      /></a>
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align: center">dissolve</td>
+    <td style="text-align: center">pixelize</td>
+    <td style="text-align: center">radial</td>
+    <td style="text-align: center">hblur</td>
+  </tr>
+  <tr>
+    <td style="text-align: center">
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/wipetl.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/wipetl.gif"
+      /></a>
+    </td>
+    <td style="text-align: center">
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/wipetr.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/wipetr.gif"
+      /></a>
+    </td>
+    <td style="text-align: center">
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/wipebl.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/wipebl.gif"
+      /></a>
+    </td>
+    <td>
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/wipebr.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/wipebr.gif"
+      /></a>
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align: center">wipetl</td>
+    <td style="text-align: center">wipetr</td>
+    <td style="text-align: center">wipebl</td>
+    <td style="text-align: center">wipebr</td>
+  </tr>
+  <tr>
+    <td style="text-align: center">
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/fadegrays.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/fadegrays.gif"
+      /></a>
+    </td>
+    <td style="text-align: center">
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/squeezev.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/squeezev.gif"
+      /></a>
+    </td>
+    <td style="text-align: center">
+      <a href="https://trac.ffmpeg.org/attachment/wiki/Xfade/squeezeh.gif" style="padding:0; border:none"
+        ><img src="https://trac.ffmpeg.org/raw-attachment/wiki/Xfade/squeezeh.gif"
+      /></a>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td style="text-align: center">fadegrays</td>
+    <td style="text-align: center">squeezev</td>
+    <td style="text-align: center">squeezeh</td>
+    <td></td>
+  </tr>
+</table>
+
 ## 关于`FFCreator`
 
 [`FFCreator`](https://github.com/tnfe/FFCreator)并非是`FFCreatorLite`的加强版, 事实上这两者的实现原理完全不同。当您要大量处理视频同时又不需要特别酷炫的过渡动画时, `FFCreatorLite`也许是更好的选择。
 
 #### 实现原理区别
+
 - `FFCreator`使用`opengl`来处理图形渲染并使用`shader`后处理来生成转场效果，最后使用`FFmpeg`合成视频。
 - `FFCreatorLite`则完全使用`FFmpeg`滤镜等效果，拼接`FFmpeg`命令来生成动画和视频。
 
@@ -136,13 +456,13 @@ creator.on('complete', e => {
 
 ### `FFCreatorLite`依赖于`FFmpeg`，因此您需要安装`FFmpeg`
 
-FFCreatorLite依赖于`FFmpeg>=0.9`以上版本。请设置FFmpeg为全局变量, 否则需要使用setFFmpegPath添加FFmpeg本机路径。(windows用户的ffmpeg很可能不在您的`%PATH`中，因此您必须设置`%FFMPEG_PATH`)
+FFCreatorLite 依赖于`FFmpeg>=0.9`以上版本。请设置 FFmpeg 为全局变量, 否则需要使用 setFFmpegPath 添加 FFmpeg 本机路径。(windows 用户的 ffmpeg 很可能不在您的`%PATH`中，因此您必须设置`%FFMPEG_PATH`)
 
 ```javascript
 FFCreator.setFFmpegPath('...');
 ```
 
-当然您也可以在你的机器上编译ffmpeg, 编译教程请看[https://trac.ffmpeg.org/wiki/CompilationGuide/Ubuntu](https://trac.ffmpeg.org/wiki/CompilationGuide/Ubuntu)。
+当然您也可以在你的机器上编译 ffmpeg, 编译教程请看[https://trac.ffmpeg.org/wiki/CompilationGuide/Ubuntu](https://trac.ffmpeg.org/wiki/CompilationGuide/Ubuntu)。
 
 ### 安装教程
 
@@ -152,7 +472,6 @@ FFCreator.setFFmpegPath('...');
 - How to Install FFmpeg on Debian [https://linuxize.com/post/how-to-install-ffmpeg-on-debian-9/](https://linuxize.com/post/how-to-install-ffmpeg-on-debian-9/)
 - How to Install FFmpeg on Windows [http://blog.gregzaal.com/how-to-install-ffmpeg-on-windows/](http://blog.gregzaal.com/how-to-install-ffmpeg-on-windows/)
 - How to Install FFmpeg on Mac OSX [https://trac.ffmpeg.org/wiki/CompilationGuide/macOS](https://trac.ffmpeg.org/wiki/CompilationGuide/macOS)
-
 
 ## 贡献代码
 

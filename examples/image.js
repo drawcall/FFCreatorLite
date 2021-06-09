@@ -1,7 +1,7 @@
 const path = require('path');
 const colors = require('colors');
 const startAndListen = require('./listen');
-const {FFCreatorCenter, FFScene, FFImage, FFText, FFCreator} = require('../');
+const { FFCreatorCenter, FFScene, FFImage, FFText, FFCreator } = require('../');
 
 const createImageAnimation = () => {
   const img1 = path.join(__dirname, './assets/imgs/01.png');
@@ -32,22 +32,22 @@ const createImageAnimation = () => {
   scene2.setBgColor('#b33771');
 
   // scene1
-  const fbg = new FFImage({path: bg1});
+  const fbg = new FFImage({ path: bg1 });
   scene1.addChild(fbg);
 
-  const fimg1 = new FFImage({path: img1, x: 300, y: 60});
+  const fimg1 = new FFImage({ path: img1, x: 300, y: 60 });
   fimg1.addEffect('moveInRight', 1.5, 1.2);
   scene1.addChild(fimg1);
 
-  const fimg2 = new FFImage({path: img2, x: 20, y: 80});
+  const fimg2 = new FFImage({ path: img2, x: 20, y: 80 });
   fimg2.addEffect('moveInLeft', 1.5, 0);
   scene1.addChild(fimg2);
 
-  const fimg3 = new FFImage({path: img3, x: 200, y: 170});
+  const fimg3 = new FFImage({ path: img3, x: 200, y: 170 });
   fimg3.addEffect('rotateInBig', 2.5, 3.5);
   scene1.addChild(fimg3);
 
-  const text1 = new FFText({text: '这是第一屏', font, x: 220, y: 30, fontSize: 36});
+  const text1 = new FFText({ text: '这是第一屏', font, x: 220, y: 30, fontSize: 36 });
   text1.setColor('#ffffff');
   text1.setBackgroundColor('#000000');
   text1.addEffect('fadeIn', 1, 1);
@@ -57,16 +57,16 @@ const createImageAnimation = () => {
   creator.addChild(scene1);
 
   // scene2
-  const fbg2 = new FFImage({path: bg2});
+  const fbg2 = new FFImage({ path: bg2 });
   fbg2.addEffect('zoomIn', 0.5, 0);
   scene2.addChild(fbg2);
   // logo
-  const flogo = new FFImage({path: logo, x: 120, y: 170});
+  const flogo = new FFImage({ path: logo, x: 120, y: 170 });
   flogo.setScale(0.75);
   flogo.addEffect('moveInUpBack', 1.2, 0.3);
   scene2.addChild(flogo);
 
-  const text2 = new FFText({text: '这是第二屏', font, x: 220, y: 30, fontSize: 36});
+  const text2 = new FFText({ text: '这是第二屏', font, x: 220, y: 30, fontSize: 36 });
   text2.setColor('#ffffff');
   text2.setBackgroundColor('#000000');
   text2.addEffect('fadeIn', 1, 0.3);
@@ -83,7 +83,7 @@ const createImageAnimation = () => {
   });
 
   creator.on('error', e => {
-    console.log(`FFCreatorLite error:: \n ${e}`);
+    console.log(`FFCreatorLite error:: \n ${JSON.stringify(e)}`);
   });
 
   creator.on('progress', e => {

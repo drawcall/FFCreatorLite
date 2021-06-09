@@ -6,68 +6,7 @@ const textDemo = require('./text');
 const imageDemo = require('./image');
 const videoDemo = require('./video');
 const animateDemo = require('./animate');
-
-const initCommand = () => {
-  inquirer
-    .prompt([
-      {
-        type: 'rawlist',
-        message: 'Please select the demo you want to run:',
-        name: 'val',
-        choices: [
-          {
-            name: 'Picture animation video',
-            value: 'image',
-          },
-          {
-            name: 'Multiple text combinations',
-            value: 'text',
-          },
-          {
-            name: 'Animation effect display',
-            value: 'animate',
-          },
-          {
-            name: 'Video animation case',
-            value: 'video',
-          },
-          {
-            name: 'Clear all caches and videos',
-            value: 'clear',
-          },
-        ],
-      },
-    ])
-    .then(runDemo);
-};
-
-const runDemo = answer => {
-  switch (answer.val) {
-    case 'image':
-      printRestartInfo();
-      imageDemo();
-      break;
-
-    case 'text':
-      printRestartInfo();
-      textDemo();
-      break;
-
-    case 'animate':
-      printRestartInfo();
-      animateDemo();
-      break;
-
-    case 'video':
-      printRestartInfo();
-      videoDemo();
-      break;
-
-    case 'clear':
-      clearAllFiles();
-      break;
-  }
-};
+const transitionDemo = require('./transition');
 
 const printRestartInfo = () =>
   console.log(colors.green(`\n --- You can press the s key or the w key to restart! --- \n`));
@@ -75,6 +14,76 @@ const printRestartInfo = () =>
 const clearAllFiles = () => {
   fs.remove(path.join(__dirname, './output'));
   fs.remove(path.join(__dirname, './cache'));
+};
+
+const choices = [
+  {
+    name: 'Picture animation video',
+    value: 'image',
+    func: imageDemo,
+  },
+  {
+    name: 'Multiple text combinations',
+    value: 'text',
+    func: textDemo,
+  },
+  {
+    name: 'Animation effect display',
+    value: 'animate',
+    func: animateDemo,
+  },
+  {
+    name: 'Scene transition effect',
+    value: 'transition',
+    func: transitionDemo,
+  },
+  {
+    name: 'Video animation demo',
+    value: 'video',
+    func: videoDemo,
+  },
+  {
+    name: 'Clear all caches and videos',
+    value: 'clear',
+    func: clearAllFiles,
+  },
+  new inquirer.Separator(),
+];
+
+const runDemo = answer => {
+  for (let i = 0; i < choices.length; i++) {
+    const choice = choices[i];
+    if (choice.value === answer.val) {
+      if (answer.val !== 'clear') printRestartInfo();
+      choice.func();
+      break;
+    }
+  }
+};
+
+const initCommand = () => {
+  for (let i = 0; i < choices.length; i++) {
+    const choice = choices[i];
+    choice.name = `(${i + 1}) ${choice.name}`;
+  }
+
+  inquirer
+    .prompt([
+      {
+        type: 'list',
+        message: 'Please select the demo you want to run:',
+        name: 'val',
+        choices,
+        pageSize: choices.length,
+        validate: function(answer) {
+          if (answer.length < 1) {
+            return 'You must choose at least one topping.';
+          }
+          return true;
+        },
+      },
+    ])
+    .then(runDemo);
 };
 
 initCommand();
