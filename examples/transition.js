@@ -12,7 +12,7 @@ const outputDir = path.join(__dirname, './output/');
 const cacheDir = path.join(__dirname, './cache/');
 
 const transitionDemoTask = () => {
-  const trans = shuffle(['distance', 'circleclose', 'slideup', 'hrslice', 'wipetl']);
+  const trans = shuffle(['pixelize', 'circleclose', 'slideup', 'hrslice', 'wipetl']);
   const order = ['一', '二', '三', '四', '五'];
 
   // create creator instance
@@ -22,7 +22,7 @@ const transitionDemoTask = () => {
     width,
     height,
     audio,
-    debug: true,
+    debug: false,
   });
 
   for (let i = 1; i < 6; i++) {
