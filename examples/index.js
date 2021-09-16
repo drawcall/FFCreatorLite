@@ -2,11 +2,6 @@ const path = require('path');
 const fs = require('fs-extra');
 const colors = require('colors');
 const inquirer = require('inquirer');
-const textDemo = require('./text');
-const imageDemo = require('./image');
-const videoDemo = require('./video');
-const animateDemo = require('./animate');
-const transitionDemo = require('./transition');
 
 const printRestartInfo = () =>
   console.log(colors.green(`\n --- You can press the s key or the w key to restart! --- \n`));
@@ -20,27 +15,26 @@ const choices = [
   {
     name: 'Picture animation video',
     value: 'image',
-    func: imageDemo,
   },
   {
     name: 'Multiple text combinations',
     value: 'text',
-    func: textDemo,
   },
   {
     name: 'Animation effect display',
     value: 'animate',
-    func: animateDemo,
   },
   {
     name: 'Scene transition effect',
     value: 'transition',
-    func: transitionDemo,
   },
   {
     name: 'Video animation demo',
     value: 'video',
-    func: videoDemo,
+  },
+  {
+    name: 'Push live rtmp stream',
+    value: 'live',
   },
   {
     name: 'Clear all caches and videos',
@@ -65,6 +59,8 @@ const initCommand = () => {
   for (let i = 0; i < choices.length; i++) {
     const choice = choices[i];
     choice.name = `(${i + 1}) ${choice.name}`;
+    if (choice.type !== 'separator' && choice.value)
+      choice.func = choice.func || require(path.join(__dirname, `./${choice.value}`));
   }
 
   inquirer

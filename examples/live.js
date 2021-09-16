@@ -1,57 +1,59 @@
 const path = require('path');
 const colors = require('colors');
 const startAndListen = require('./listen');
-const { FFCreatorCenter, FFScene, FFImage, FFText, FFVideo, FFCreator } = require('../');
+const { FFCreatorCenter, FFScene, FFImage, FFText, FFLive, FFCreator } = require('../');
 
 const createFFTask = () => {
-  const img3 = path.join(__dirname, './assets/imgs/06.png');
+  const img1 = path.join(__dirname, './assets/imgs/06.png');
+  const bg1 = path.join(__dirname, './assets/imgs/wallp/06.jpeg');
   const logo = path.join(__dirname, './assets/imgs/logo/logo2.png');
   const font = path.join(__dirname, './assets/font/scsf.ttf');
   const audio = path.join(__dirname, './assets/audio/03.wav');
-  const video1 = path.join(__dirname, './assets/video/video1.mp4');
-  const video2 = path.join(__dirname, './assets/video/video2.mp4');
+
+  const live = 'rtmp://server/live/originalStream';
+  const output = 'rtmp://server/live/h264Stream';
 
   const cacheDir = path.join(__dirname, './cache/');
   const outputDir = path.join(__dirname, './output/');
 
+  const width = 700;
+  const height = 500;
   // create creator instance
   const creator = new FFCreator({
     cacheDir,
+    output,
     outputDir,
-    width: 576,
-    height: 1024,
+    width,
+    height,
     log: true,
-    //audio,
+    pushLive: true,
+    audio,
   });
 
   // create FFScene
-  const scene1 = new FFScene();
-  const scene2 = new FFScene();
-  scene1.setBgColor('#9980fa');
-  scene2.setBgColor('#ea2228');
+  const scene = new FFScene();
+  scene.setBgColor('#9980fa');
 
-  const fvideo1 = new FFVideo({ path: video1, y: 330 });
-  fvideo1.setScale(0.6);
-  scene1.addChild(fvideo1);
+  const fbg = new FFImage({ path: bg1 });
+  fbg.setXY(50, 50);
+  scene.addChild(fbg);
 
-  const fvideo2 = new FFVideo({ path: video2, x: 300, y: 330 });
-  fvideo2.setScale(0.3);
-  fvideo2.addEffect('moveInRight', 2.5, 3.5);
-  scene1.addChild(fvideo2);
+  const fflive = new FFLive({ path: live, x: 100, y: 100 });
+  fflive.setScale(0.3);
+  fflive.addEffect('moveInRight', 2.5, 3.5);
+  //scene.addChild(fflive);
 
-  const fimg3 = new FFImage({ path: img3, x: 60, y: 600 });
-  fimg3.setScale(0.4);
-  fimg3.addEffect('rotateInBig', 2.5, 1.5);
-  scene1.addChild(fimg3);
+  const fimg1 = new FFImage({ path: img1, x: -80, y: 80 });
+  fimg1.addEffect('moveInLeft', 1.5, 0);
+  scene.addChild(fimg1);
 
-  const text1 = new FFText({ text: 'FFVideo案例', font, x: 140, y: 100, fontSize: 42 });
+  const text1 = new FFText({ text: 'FFLive案例', font, x: width / 2 - 120, y: 100, fontSize: 42 });
   text1.setColor('#ffffff');
   text1.setBorder(5, '#000000');
-  //text1.addEffect('fadeIn', 2, 1);
-  scene1.addChild(text1);
+  scene.addChild(text1);
 
-  scene1.setDuration(17);
-  creator.addChild(scene1);
+  scene.setDuration(17);
+  creator.addChild(scene);
 
   creator.start();
   creator.openLog();
