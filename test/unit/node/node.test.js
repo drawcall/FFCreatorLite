@@ -6,18 +6,19 @@ jest.mock('@/conf/conf', () => ({
 }));
 jest.mock('@/utils/utils', () => ({
   generateID: jest.fn(() => 1),
+  genId: jest.fn(() => 1),
 }));
 
 describe('node/node', () => {
   let node = null;
+  node = new FFNode();
 
   test('instantiation component needs to succeed', () => {
-    node = new FFNode();
     expect(node).toBeInstanceOf(FFNode);
   });
 
   test('generateID: set id success', () => {
-    node.generateID();
+    node.genId();
     expect(node.id).toBe(1);
   });
 
