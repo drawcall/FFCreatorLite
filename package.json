@@ -1,6 +1,6 @@
 {
   "name": "ffcreatorlite",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "description": "FFCreatorLite is a lightweight and flexible short video production library",
   "main": "lib/index.js",
   "scripts": {
@@ -19,7 +19,6 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "colors": "^1.4.0",
     "eventemitter3": "^4.0.7",
     "ffmpeg-probe": "^1.0.6",
     "fluent-ffmpeg": "^2.1.2",
@@ -30,6 +29,7 @@
     "tempy": "^0.7.1"
   },
   "devDependencies": {
+    "colors": "^1.4.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.0",
