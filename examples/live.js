@@ -10,6 +10,7 @@ const createFFTask = () => {
   const font = path.join(__dirname, './assets/font/scsf.ttf');
   const audio = path.join(__dirname, './assets/audio/03.wav');
 
+  console.log('Please enter the correct live stream.');
   const live = 'rtmp://server/live/originalStream';
   const output = 'rtmp://server/live/h264Stream';
 
@@ -41,7 +42,7 @@ const createFFTask = () => {
   const fflive = new FFLive({ path: live, x: 100, y: 100 });
   fflive.setScale(0.3);
   fflive.addEffect('moveInRight', 2.5, 3.5);
-  //scene.addChild(fflive);
+  scene.addChild(fflive);
 
   const fimg1 = new FFImage({ path: img1, x: -80, y: 80 });
   fimg1.addEffect('moveInLeft', 1.5, 0);

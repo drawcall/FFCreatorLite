@@ -29,6 +29,7 @@ Nowadays, short video is an increasingly popular form of media communication. Li
 - Only rely on `FFmpeg`, easy to install, cross-platform, and low requirements for machine configuration.
 - The video processing speed is extremely fast, a 5-7 minute video only takes 1 minute.
 - Supports multiple elements such as pictures, sounds, video clips, and text.
+- Support for adding music and animation to the live stream before launching.
 - The latest version supports more than 30 scene transition animations.
 - Contains 70% animation effects of `animate.css`, which can convert css animation to video.
 
