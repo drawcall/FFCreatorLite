@@ -29,7 +29,7 @@ const createFFTask = () => {
     log: true,
     preset: 'veryfast',
     vprofile: 'baseline',
-    pushLive: true,
+    upStreaming: true,
     audio,
   });
 
