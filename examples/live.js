@@ -28,6 +28,7 @@ const createFFTask = () => {
     height,
     log: true,
     preset: 'veryfast',
+    vprofile: 'baseline',
     pushLive: true,
     audio,
   });
