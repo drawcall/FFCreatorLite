@@ -17,8 +17,8 @@ const createFFTask = () => {
   const cacheDir = path.join(__dirname, './cache/');
   const outputDir = path.join(__dirname, './output/');
 
-  const width = 700;
-  const height = 500;
+  const width = 1920;
+  const height = 1080;
   // create creator instance
   const creator = new FFCreator({
     cacheDir,
@@ -27,6 +27,7 @@ const createFFTask = () => {
     width,
     height,
     log: true,
+    preset: 'veryfast',
     pushLive: true,
     audio,
   });
@@ -39,8 +40,8 @@ const createFFTask = () => {
   fbg.setXY(50, 50);
   scene.addChild(fbg);
 
-  const fflive = new FFLive({ path: live, x: 100, y: 100 });
-  fflive.setScale(0.3);
+  const fflive = new FFLive({ path: live, x: 0, y: 0 });
+  fflive.setScale(1);
   fflive.addEffect('moveInRight', 2.5, 3.5);
   scene.addChild(fflive);
 
