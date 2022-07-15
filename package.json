@@ -1,6 +1,6 @@
 {
   "name": "ffcreatorlite",
-  "version": "2.3.8",
+  "version": "2.3.9",
   "description": "FFCreatorLite is a lightweight and flexible short video production library",
   "main": "lib/index.js",
   "scripts": {
