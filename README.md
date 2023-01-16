@@ -119,7 +119,7 @@ The latest version of ffcreatorlite already supports scene transition animation,
 
 Of course you need to install [4.3.0](https://stackoverflow.com/questions/60704545/xfade-filter-not-available-with-ffmpeg) above version of ffmpeg. Because here is the [Xfade](https://trac.ffmpeg.org/wiki/Xfade) filter to achieve Animation.
 
-#### useage
+#### usage
 
 ```javascript
 // https://trac.ffmpeg.org/wiki/Xfade
