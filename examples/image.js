@@ -22,7 +22,7 @@ const createImageAnimation = () => {
     width: 600,
     height: 400,
     log: true,
-    debug: true,
+    //debug: true,
     audio,
   });
 
