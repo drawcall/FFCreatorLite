@@ -30,11 +30,11 @@ const createFFTask = () => {
   scene1.setBgColor('#9980fa');
   scene2.setBgColor('#ea2228');
 
-  const fvideo1 = new FFVideo({ path: video1, y: 330 });
+  const fvideo1 = new FFVideo({ path: video1, audio: true, y: 330 });
   fvideo1.setScale(0.6);
   scene1.addChild(fvideo1);
 
-  const fvideo2 = new FFVideo({ path: video2, x: 300, y: 330 });
+  const fvideo2 = new FFVideo({ path: video2, audio: false,  x: 300, y: 330 });
   fvideo2.setScale(0.3);
   fvideo2.addEffect('moveInRight', 2.5, 3.5);
   scene1.addChild(fvideo2);
